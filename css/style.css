@@ -1,0 +1,273 @@
+
+/********************************************/
+/* Hey there. This stylesheet is broken up 
+into the following sections.
+
+SECTION 1: GENERAL STYLES
+SECTION 2: CUSTOM CLASSES & IDS
+SECTION 3: BUTTONS
+SECTION 4: MENU AND NAV
+SECTION 5: OFF CANVAS NAV
+SECTION 6: MAIN DIVS AS THEY APPEAR IN THE HTML
+SECTION 7: FOOTER
+SECTION 8: MEDIA QUERIES - THIS SITE WAS BUILT 
+MOBILE FIRST. SO THE MEDIA QUERIES PERTAIN TO 
+MEDIUM AND LARGE SCREENS. */
+/********************************************/
+
+/********************************************/
+/* TYPOGRAPHY */
+/********************************************/
+
+body {
+	font-family: 'Cormorant Garamond', serif;
+	color: #212121;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+	color: #f26522;
+	text-transform: uppercase;
+}
+
+a {
+	color: #f26522;
+}
+
+a:hover {
+	color: rgba(0, 0, 0, .35);
+}
+
+a:focus {
+	color: rgba(0, 0, 0, .65);
+}
+
+
+
+/********************************************/
+/* GENERAL STYLES */
+/********************************************/
+ * {
+ 	box-sizing: border-box;
+ }
+
+html, body, .main-content, main {
+	height: 100%;
+}
+
+.row {
+	margin-bottom: 1rem;
+}
+
+.positioncenter {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* NAVIGATION */
+
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+
+.left-off-canvas-menu {
+	background-color: #f8f8f8;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li a{
+	color: #f26522;
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+nav li a:hover {
+	color: rgba(0, 0, 0, .35);
+}
+
+nav li {
+	margin: 0;
+	padding-top: .5rem;
+}
+
+.open-menu-button {
+	font-size: 1.5rem;
+	color: #f8f8f8;
+	padding-left: 1.5rem;
+}
+
+.open-menu-button:hover, .open-menu-button:focus {
+	color: rgba(255, 255, 255, .35);
+}
+
+.move-right .exit-off-canvas { /* removes off canvas drop shadow */
+  box-shadow: none;
+}
+
+/* NAVIGATION ENDS */
+
+header {
+	height: 6rem;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+header img {
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	left: 50%;
+	transform:translateX(-87%);
+}
+
+.hero {
+	height: 100vh;
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-bottom: 1rem;
+}
+
+.hero a {
+	color: #f8f8f8;
+	text-decoration: none;
+	font-size: 3rem;
+	position: absolute;
+	top: 85vh;	
+	left: 50%;
+}
+
+.hero a:hover {
+	color: rgba(255,255,255, .35);
+}
+
+.about aside {
+	line-height: 0;
+	margin-bottom: 1.5rem;
+}
+
+.anchor-button {
+	display: block;
+	margin-bottom: .5rem;
+	border-width: 2px;
+	border-color: #f26522;
+	border-style:solid;
+	color: #f8f8f8;
+	transition: background-color 300ms ease-out;
+}
+
+.anchor-button h3 {
+	color: #f8f8f8;
+}
+
+.anchor-button:hover h3, .anchor-button:focus h3 {
+	color: #212121;
+}
+
+.contact {
+	height: 80vh;
+	background-image: url(../img/sign.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.contact a:hover, .contact a:focus {
+	background-color: #f26522;
+	color: #212121;
+}
+
+.contact .fa {
+	font-size: 3rem;
+	margin-bottom: .5rem;
+}
+
+form .button {
+	background-color: #f26522;
+}
+
+form .button:hover, form .button:focus {
+	background-color: #87cb63;
+}
+
+.about table {
+	width: 100%;
+}
+
+.phonenumber {
+	font-size: 2rem;
+}
+
+.maps-modal {
+/*	width: 90%;*/
+	height: 80vh;
+}
+
+
+
+
+/********************************************/
+/* FOOTER */
+/********************************************/
+
+footer {
+	height: 10rem;
+	background-color: #87cb63;
+}
+
+.copyrightline {
+	position: absolute;
+	bottom: 0;
+	left: 1rem;
+}
+
+.tagline {
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: #212121;
+	padding-top: 3rem;
+}
+
+footer a {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	color: #212121;
+}
+
+footer span {
+	font-size: 1.3rem;
+}
+
+/********************************************/
+/* MEDIA QUERIES */
+/********************************************/
+/* Large screens */
+/* Medium screens */
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) { 
+
+.tagline {
+	font-size: 2rem;
+}
+
+} 
+
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) { 
+
+} 
+
